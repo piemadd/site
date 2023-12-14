@@ -136,10 +136,14 @@ a.resourceButton img {
   height: 1.2rem;
 }
 
-div.projectHolder {
+div.projectHolder, div.imageHolder {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, auto));
   gap: 0.5rem;
+}
+
+div.imageHolder img {
+  width: 100%;
 }
 
 div.project {
