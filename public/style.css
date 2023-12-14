@@ -160,6 +160,10 @@ div.project h4 {
   text-decoration: none;
 }
 
+#topLinks {
+  transition: all 100ms ease-in-out;
+}
+
 /*
 new Date().toLocaleString([], {
   month: 'short',
