@@ -1,0 +1,18 @@
+Javascript Logo: https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg
+Typescript Logo: https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg
+Python Logo: https://commons.wikimedia.org/wiki/File:Python_logo_01.svg
+HTML Logo: https://commons.wikimedia.org/wiki/File:HTML5_logo_and_wordmark.svg
+CSS Logo: https://commons.wikimedia.org/wiki/File:CSS3_logo.svg
+Java Logo: https://en.wikipedia.org/wiki/File:Java_programming_language_logo.svg
+React Logo: https://commons.wikimedia.org/wiki/File:React_Logo_SVG.svg
+Vite Logo: https://commons.wikimedia.org/wiki/File:Vitejs-logo.svg
+Nextjs Logo: https://github.com/vercel/next.js/blob/canary/packages/next/README.md
+Maplibre Logo: https://github.com/maplibre
+Mapbox Logo: https://github.com/mapbox
+Leaflet Logo: https://github.com/Leaflet
+React Router Logo: https://reactrouter.com/brand
+X/Twitter Logo: https://about.twitter.com/en/who-we-are/brand-toolkit
+Tiktok Logo: https://en.wikipedia.org/wiki/File:TikTok_logo.svg
+Instagram Logo: https://commons.wikimedia.org/wiki/File:Instagram_logo_2016.svg
+Snapchat Logo: https://help.snapchat.com/hc/en-us/articles/7012349890452-Snapchat-Ghost-Logo-Usage-Guidelines
+Email Logo: https://en.m.wikipedia.org/wiki/File:Aiga_mail.svg
