@@ -156,6 +156,10 @@ div.project h4 {
   font-size: 1.4rem;
 }
 
+.nounderline {
+  text-decoration: none;
+}
+
 /*
 new Date().toLocaleString([], {
   month: 'short',
