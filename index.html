@@ -30,13 +30,105 @@
           <a href="#chicagoooooooooo">Chicago</a>.
         </h1>
         <p>
-          Additionally, I do Software Consulting and
-          <a href="#river">Deckhand Work</a> on the Chicago River.
+          In addition, I do Software Consulting and
+          <a href="#river">Deckhand Work</a> on the Chicago River. Make sure to
+          check out my <a href="#analytics">Infrastructure Analytics</a>.
         </p>
-        <p><a href="#links">Links</a>/<a href="/resume.pdf">Resume</a></p>
+        <div class="resourceButtonHolder">
+          <a
+            class="resourceButton"
+            href="https://tiktok.com/@piemadd"
+            target="_blank"
+          >
+            <img src="/resources/tiktok.png" />
+            <p>Tiktok</p>
+          </a>
+          <a
+            class="resourceButton"
+            href="https://instagram.com/piemadd"
+            target="_blank"
+          >
+            <img src="/resources/instagram.png" />
+            <p>Instagram</p>
+          </a>
+          <a
+            class="resourceButton"
+            href="https://www.youtube.com/@piemadd"
+            target="_blank"
+          >
+            <img src="/resources/yt.png" />
+            <p>Youtube</p>
+          </a>
+          <a
+            class="resourceButton"
+            href="mailto:piero@piemadd.com"
+            target="_blank"
+          >
+            <img src="/resources/email.png" />
+            <p>Email</p>
+          </a>
+          <a class="resourceButton" href="/resume.pdf" target="_blank">
+            <p>Resume</p>
+          </a>
+        </div>
+      </section>
+      <section id="analytics">
+        <h2>Infrastructure Analytics</h2>
+        <p id="analyticsLoadingMessage">Currently Loading Infrastructure Analytics...</p>
+        <div class="analyticsHolder">
+          <div class="metric">
+            <div class="metricSummary">
+              <p>Unique Users</p>
+              <h4 id="totalUsers">Loading</h4>
+            </div>
+            <div class="metricGraph">
+              <canvas id="userCount" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metricSummary">
+              <p>Total Requests</p>
+              <h4 id="totalRequests">Loading</h4>
+            </div>
+            <div class="metricGraph">
+              <canvas id="requestCount" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metricSummary">
+              <p>Percent Cached</p>
+              <h4 id="overallPercentCached">Loading</h4>
+            </div>
+            <div class="metricGraph">
+              <canvas id="requestPercentCached" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metricSummary">
+              <p>Total Data Served</p>
+              <h4 id="totalDataServed">Loading</h4>
+            </div>
+            <div class="metricGraph">
+              <canvas id="dataServed" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+
+          <div class="metric">
+            <div class="metricSummary">
+              <p>Data Cached</p>
+              <h4 id="totalDataCached">Loading</h4>
+            </div>
+            <div class="metricGraph">
+              <canvas id="dataCached" style="width: 100%; height: 100%;"></canvas>
+            </div>
+          </div>
+        </div>
       </section>
       <section id="dev">
-        <h2>Development</h2>
+        <h2>Software Development</h2>
         <h3>Languages</h3>
         <div class="resourceButtonHolder">
           <a
@@ -183,7 +275,7 @@
           </div>
           <div class="project">
             <h4>Store</h4>
-            <p><b>Language:</b> Javascript (Node.js)</p>
+            <p><b>Language:</b> Javascript (Node.js Runtime)</p>
             <p><b>Framework:</b> Fastify</p>
             <p>
               An all purpose server for serving ephemeral data (such as
@@ -380,46 +472,6 @@
               was replaced by a Wendella class boat.
             </p>
           </div>
-        </div>
-      </section>
-      <section id="links">
-        <h2>Links</h2>
-        <div class="resourceButtonHolder">
-          <a
-            class="resourceButton"
-            href="https://tiktok.com/@piemadd"
-            target="_blank"
-          >
-            <img src="/resources/tiktok.png" />
-            <p>Tiktok</p>
-          </a>
-          <a
-            class="resourceButton"
-            href="https://instagram.com/piemadd"
-            target="_blank"
-          >
-            <img src="/resources/instagram.png" />
-            <p>Instagram</p>
-          </a>
-          <a
-            class="resourceButton"
-            href="https://www.youtube.com/@piemadd"
-            target="_blank"
-          >
-            <img src="/resources/yt.png" />
-            <p>Youtube</p>
-          </a>
-          <a
-            class="resourceButton"
-            href="mailto:piero@piemadd.com"
-            target="_blank"
-          >
-            <img src="/resources/email.png" />
-            <p>Email</p>
-          </a>
-          <a class="resourceButton" href="/resume.pdf" target="_blank">
-            <p>Resume</p>
-          </a>
         </div>
       </section>
       <section id="chicagoooooooooo">
