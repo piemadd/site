@@ -13,6 +13,18 @@
   --c5: #f6dcac;
 }
 
+@keyframes AnimationName {
+  0% {
+    background-position: 24% 0%;
+  }
+  50% {
+    background-position: 77% 100%;
+  }
+  100% {
+    background-position: 24% 0%;
+  }
+}
+
 * {
   margin: 0;
 }
@@ -29,7 +41,7 @@ body {
 a,
 a:visited {
   color: var(--fg);
-  text-decoration: underline #ccc;
+  text-decoration: underline var(--fg);
 }
 
 a:hover {
@@ -43,8 +55,19 @@ h1 {
 }
 
 h1 span {
-  color: var(--e1);
+  color: #00000000;
+  background: var(--e1);
+  background-clip: text;
   font-weight: 400;
+}
+
+h1 span:hover {
+  background: var(--c5);
+  background: linear-gradient(88deg, #f16542, #4284f1);
+  background-size: 1000% 1000%;
+
+  animation: AnimationName 3s ease infinite;
+  background-clip: text;
 }
 
 h1 a {
@@ -102,6 +125,13 @@ section#intro {
   gap: 0.5rem;
 }
 
+section#intro div#introText {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 1000px;
+}
+
 section#intro div.resourceButtonHolder {
   margin-top: 0.5rem;
 }
@@ -145,7 +175,8 @@ a.resourceButton img {
   height: 1.2rem;
 }
 
-div.projectHolder, div.imageHolder {
+div.projectHolder,
+div.imageHolder {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, auto));
   gap: 0.5rem;
