@@ -17,11 +17,12 @@ mainSection.addEventListener("scroll", (event) => {
 
 setupCharts();
 
-let clicksToRun = 3;
-document.getElementById('footer').addEventListener('click', (e) => {
-  clicksToRun--;
 
-  console.log(clicksToRun)
+
+let clicksToRun = 3;
+
+const handleActivatorClick = (e) => {
+  clicksToRun--;
 
   if (clicksToRun === 0) {
     const confirmed = confirm('would you like to enable the super secret easter egg?');
@@ -30,8 +31,11 @@ document.getElementById('footer').addEventListener('click', (e) => {
       setupPhysics();
       runPhysics();
     }
-  }
-})
+  };
+}
+
+document.getElementById('topName').addEventListener('click', handleActivatorClick);
+document.getElementById('footer').addEventListener('click', handleActivatorClick);
 
 //attaching to window for manual activation
 window.setupPhysics = setupPhysics;
