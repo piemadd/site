@@ -24,7 +24,7 @@ let clicksToRun = 3;
 const handleActivatorClick = (e) => {
   clicksToRun--;
 
-  if (clicksToRun <= 0) {
+  if (clicksToRun === 0) {
     const confirmed = confirm('would you like to enable the super secret easter egg?');
 
     if (confirmed) {
