@@ -1,5 +1,5 @@
 import setupCharts from './setupCharts.js';
-import { setupPhysics, runPhysics } from './setupPhysics.js';
+import { setupPhysics, runPhysics, updatePhysics } from './setupPhysics.js';
 
 const mainSection = document.getElementById('mainSection');
 const topLinks = document.getElementById('topLinks');
@@ -36,5 +36,6 @@ document.getElementById('footer').addEventListener('click', (e) => {
 //attaching to window for manual activation
 window.setupPhysics = setupPhysics;
 window.runPhysics = runPhysics;
+window.updatePhysics = updatePhysics;
 
 //runPhysics();

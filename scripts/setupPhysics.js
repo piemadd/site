@@ -76,10 +76,10 @@ export const setupPhysics = () => {
   engine = Engine.create();
 
   const processedElements = elements.map((element, i) => {
-    const body = Bodies.rectangle(element.elemMeta.left, element.elemMeta.top, element.elemMeta.width, element.elemMeta.height, {
+    const body = Bodies.rectangle(element.elemMeta.left + (element.elemMeta.width / 2), element.elemMeta.top + (element.elemMeta.height / 2), element.elemMeta.width, element.elemMeta.height, {
       orig: {
-        x: element.elemMeta.left,
-        y: element.elemMeta.top,
+        x: element.elemMeta.left + (element.elemMeta.width / 2),
+        y: element.elemMeta.top + (element.elemMeta.height / 2),
       }
     });
 
