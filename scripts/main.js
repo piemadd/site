@@ -24,8 +24,12 @@ document.getElementById('footer').addEventListener('click', (e) => {
   console.log(clicksToRun)
 
   if (clicksToRun === 0) {
-    setupPhysics();
-    runPhysics();
+    const confirmed = confirm('would you like to enable the super secret easter egg?');
+
+    if (confirmed) {
+      setupPhysics();
+      runPhysics();
+    }
   }
 })
 
