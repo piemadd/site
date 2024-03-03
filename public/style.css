@@ -58,6 +58,7 @@ h1 span {
   color: #00000000;
   background: var(--e1);
   background-clip: text;
+  -webkit-background-clip: text;
   font-weight: 400;
 }
 
