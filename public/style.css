@@ -69,6 +69,7 @@ h1 span:hover {
 
   animation: AnimationName 3s ease infinite;
   background-clip: text;
+  -webkit-background-clip: text;
 }
 
 h1 a {
