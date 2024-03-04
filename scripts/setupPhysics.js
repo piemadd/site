@@ -94,7 +94,7 @@ export const setupPhysics = () => {
     return body;
   });
 
-  const ground = Bodies.rectangle(mainSize[0] / 2, mainSize[1] + 100, 1000, 100, { isStatic: true });
+  const ground = Bodies.rectangle((mainSize[0] / 2) - 100, mainSize[1] + 100, mainSize[0] + 200, 100, { isStatic: true });
   const leftWall = Bodies.rectangle(-50, mainSize[1] / 2, 100, mainSize[1], { isStatic: true });
   const rightWall = Bodies.rectangle(mainSize[0] + 50, mainSize[1] / 2, 100, mainSize[1], { isStatic: true });
 
