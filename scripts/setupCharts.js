@@ -225,7 +225,7 @@ const setupCharts = () => {
       );
 
       //replace the loading message
-      document.getElementById('analyticsLoadingMessage').innerText = 'Past 30 Days'
+      document.getElementById('analyticsLoadingMessage').innerText = 'Past 30 Days via Cloudflare Analytics'
     })
     .catch(e => { //ye olde error catching
       console.error(e)
