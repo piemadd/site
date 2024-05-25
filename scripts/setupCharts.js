@@ -73,9 +73,11 @@ const setupCharts = () => {
           dataCached[date] += site.dates[date].cachedBytes;
 
           //last site, so we can make the cached percent an actual percent
+          /*
           if (i === arr.length - 1) {
             requestPercentCached[date] /= requestCount[date];
           }
+          */
         })
 
         Object.keys(site.totals).forEach((dataPointKey) => {
@@ -83,6 +85,12 @@ const setupCharts = () => {
 
           dataTotals[dataPointKey] += site.totals[dataPointKey]
         })
+      })
+
+      //i used to do this on the last site in the loop, but the occasional edge case (missing date for a domain) would result in some data being malformed
+      Object.keys(requestPercentCached).forEach((date) => {
+        if (!requestCount[date]) return;
+        requestPercentCached[date] /= requestCount[date];
       })
 
       //setting top numbers
