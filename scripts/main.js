@@ -1,3 +1,7 @@
+if (new URL(window.location).pathname === '/lol') {
+  alert('Hey there, you seem to have read the quote in my HS yearbook. I haven\'t really done anything with the URL, so browse my regular site I guess ¯\\_(ツ)_/¯.')
+}
+
 import setupCharts from './setupCharts.js';
 import { setupPhysics, runPhysics, updatePhysics } from './setupPhysics.js';
 
@@ -16,8 +20,6 @@ mainSection.addEventListener("scroll", (event) => {
 });
 
 setupCharts();
-
-
 
 let clicksToRun = 3;
 
