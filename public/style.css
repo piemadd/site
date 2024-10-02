@@ -49,6 +49,10 @@ a:hover {
   text-decoration: underline var(--e1);
 }
 
+h1 > a {
+  white-space: nowrap;
+}
+
 h1 {
   font-size: 3em;
   font-weight: 300;
@@ -211,9 +215,10 @@ div.project h4 {
 }
 
 div.analyticsHolder {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+
+  display: grid;
+  grid-gap: 0.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
 }
 
 div.metric {
