@@ -50,7 +50,7 @@ a:hover {
 }
 
 h1 > a {
-  white-space: nowrap;
+  /* white-space: nowrap; */
 }
 
 h1 {
