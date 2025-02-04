@@ -19,28 +19,11 @@ setupCharts();
 
 let clicksToRun = 3;
 
-const handleActivatorClick = (e) => {
-  //clicksToRun--;
-
-  if (clicksToRun === 0) {
-    const confirmed = confirm('would you like to enable the super secret easter egg?');
-
-    if (confirmed) {
-      setupPhysics();
-      runPhysics();
-    }
-  };
-}
-
 if (new URL(window.location).pathname === '/lol') {
   //alert('Hey there, you seem to have read the quote in my HS yearbook. I haven\'t really done anything with the URL, so browse my regular site I guess ¯\\_(ツ)_/¯.')
-  clicksToRun = 0;
   setupPhysics();
   runPhysics();
 }
-
-document.getElementById('topName').addEventListener('click', handleActivatorClick);
-document.getElementById('footer').addEventListener('click', handleActivatorClick);
 
 //attaching to window for manual activation
 window.setupPhysics = setupPhysics;
